@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section
-      className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center bg-cover bg-center"
+      className="relative flex min-h-screen flex-col items-center bg-cover bg-center"
       style={{
         backgroundImage:
           "url('/bg.jpeg'), linear-gradient(135deg, #1e293b, #334155)",
@@ -25,7 +25,7 @@ export default function Hero() {
          <p><b>Example:(user@Yourdomain.com)</b></p>
       </div>
 
-      <div className="relative z-10 flex flex-wrap justify-center gap-4 px-4 sm:gap-6 sm:px-6">
+      <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
         {theme.map((option) => (
           <Link
             key={option.text}
