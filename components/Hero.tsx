@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Darkening overlay so the boxes stay readable over any image */}
       <div className="absolute inset-0 bg-black/30" />
 
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center pb-24 text-center text-white">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center pb-10 text-center text-white">
         <Image
          src="/adob.png" width={80} height={80} alt="adobe"/>
          <h1 className="text-3xl">Adobe PDF</h1>
