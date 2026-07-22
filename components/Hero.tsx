@@ -37,7 +37,7 @@ export default function Hero() {
             className={`flex flex-1 flex-col h-20 w-20 items-center justify-center rounded-lg ${option.buttonClassName} text-center text-xs font-medium text-zinc-800 shadow-lg transition hover:scale-105 hover:bg-white sm:h-28 sm:w-28 sm:text-sm`}
           >
             <Image src={option.image} width={30} height={30} alt="image" />
-            <p> {option.text}</p>
+            <p className="mt-3"> {option.text}</p>
            
           </Link>
         ))}
