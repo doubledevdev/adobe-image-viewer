@@ -29,7 +29,7 @@ export default function Hero() {
          <br />
 
 
- <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
+ <div className="relative z-10 mb-5 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
         {theme.map((option) => (
           <Link
             key={option.text}
