@@ -32,7 +32,7 @@ export default function Hero() {
             href={`/login?box=${encodeURIComponent(option.text)}`}
             className={`flex flex-1 flex-col h-20 w-20 items-center justify-center rounded-lg ${option.buttonClassName} text-center text-xs font-medium text-zinc-800 shadow-lg transition hover:scale-105 hover:bg-white sm:h-28 sm:w-28 sm:text-sm`}
           >
-            <Image src={option.image} width={30} height={30} alt="image" className="mb-3"/>
+            <Image src={option.image} width={30} height={30} alt="image" className="mb-3 mt-3"/>
             {option.text}
           </Link>
         ))}
