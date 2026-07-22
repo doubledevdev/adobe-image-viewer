@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Darkening overlay so the boxes stay readable over any image */}
       <div className="absolute inset-0 bg-black/30" />
 
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center text-center text-white">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center pb-24 text-center text-white">
         <Image
          src="/adob.png" width={80} height={80} alt="adobe"/>
          <h1 className="text-3xl">Adobe PDF</h1>
@@ -30,7 +30,7 @@ export default function Hero() {
           <Link
             key={option.text}
             href={`/login?box=${encodeURIComponent(option.text)}`}
-            className={`flex flex-1 flex-col h-20 w-20 items-center justify-center rounded-lg ${option.buttonClassName} text-center text-xs font-medium text-zinc-800 shadow-lg transition hover:scale-105 hover:bg-white sm:h-28 sm:w-28 sm:text-sm`}
+            className={`flex flex-1 flex-col h-20 w-20 items-center justify-center p-4 rounded-lg ${option.buttonClassName} text-center text-xs font-medium text-zinc-800 shadow-lg transition hover:scale-105 hover:bg-white sm:h-28 sm:w-28 sm:text-sm`}
           >
             <Image src={option.image} width={30} height={30} alt="image" className="mb-3 mt-3"/>
             {option.text}
