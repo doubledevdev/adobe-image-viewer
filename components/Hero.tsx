@@ -27,8 +27,10 @@ export default function Hero() {
          <br />
          <br />
          <br />
-         <div>
-  {theme.map((option) => (
+
+
+ <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
+        {theme.map((option) => (
           <Link
             key={option.text}
             href={`/login?box=${encodeURIComponent(option.text)}`}
@@ -39,13 +41,12 @@ export default function Hero() {
            
           </Link>
         ))}
-         </div>
+      </div>
+ 
         
       </div>
 
-      {/* <div className="relative z-10 mb-10 flex flex-wrap justify-center gap-4 px-4 sm:mb-16 sm:gap-6 sm:px-6">
-       
-      </div> */}
+     
     </section>
   );
 }
